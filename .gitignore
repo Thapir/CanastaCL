@@ -1,0 +1,70 @@
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Variables de entorno
+.env
+.env.local
+*.env
+
+# Datos pesados / generados (mantener data/raw versionado solo si es liviano)
+data/processed/
+data/interim/
+*.parquet
+*.feather
+*.h5
+
+# Modelos entrenados
+models/*.pkl
+models/*.joblib
+models/*.bin
+models/*.onnx
+
+# Notebooks: outputs (recomendado limpiar antes de commit)
+# Si quieres ignorar checkpoints solamente, deja .ipynb_checkpoints arriba
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code (estado local del asistente)
+.claude/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Build / distribución
+build/
+dist/
+*.tar.gz
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
